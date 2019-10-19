@@ -1261,7 +1261,9 @@ a4 { font-weight:bold;
 		</center>
 	</div>	
 
-
+	<audio id="beep">
+		<source src="beep.mp3" type="audio/mpeg">
+	</audio>
 	<audio id="touch">
 		<source src="touch.wav" type="audio/mpeg">
 	</audio>
@@ -1630,6 +1632,9 @@ window.onmousemove = function(){
 
 		on = true;
 			}
+	soun11.onclick = function(){
+		beep.play();
+			}			
 	soun3.onclick = function(){
 		click.play();
 			tada.style.display = "none";
